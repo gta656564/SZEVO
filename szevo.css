@@ -1,0 +1,98 @@
+a {
+    color: rgb(234, 0, 255);
+}
+
+a:link {
+    color: rgb(234, 0, 255);
+}
+
+a:hover {
+    color: rgb(70, 0, 128);
+}
+
+a:active {
+    color: brown;
+}
+
+.sidebar {
+    width: 200px;
+    background: orchid;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 5px 5px 12px 2px purple;
+    position: absolute;
+    left: -180px;
+    transition: left 1s;
+}
+
+.sidebar:hover {
+    left: -5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.sidebar li {
+    border-bottom: 1px solid blueviolet;
+    text-align: center;
+
+}
+
+.sidebar li:last-child {
+    border-bottom: none;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgb(78, 5, 78);
+    padding: 20px;
+    display: block;
+}
+
+.sidebar a:hover {
+    background: palevioletred;
+
+}
+
+.sidebar li:first-child a:hover {
+    border-top-right-radius: 6px;
+}
+
+.sidebar li:last-child a:hover {
+    border-bottom-right-radius: 6px;
+}
+
+.sidebar ul::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background: orchid;
+    left: 200px;
+    top: 100px;
+    box-shadow: 5px 5px 12px 2px purple;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.button {
+    color: rgb(132, 1, 255);
+    background-color: rgb(83, 13, 148);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: blueviolet;
+    color: rgb(234, 0, 255);
+}
+
+.button:active{
+    background-color: rgb(19, 1, 51);
+    color: rgb(163, 0, 90);
+}
